@@ -1,6 +1,6 @@
 people = 20
 cats = 30
-dogst = 15
+dogs = 15
 
 
 if people < cats:
