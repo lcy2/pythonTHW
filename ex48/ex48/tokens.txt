@@ -1,0 +1,11 @@
+north direction
+south direction
+east direction
+go verb
+kill verb
+eat verb
+the stop
+in stop
+of stop
+bear noun
+princess noun

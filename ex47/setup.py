@@ -1,6 +1,6 @@
 try:
     from setuptools import setup
-except ImportError:
+except ImportErro:
     from distutils.core import setup
     
     
@@ -12,7 +12,7 @@ config = {
     'author_email': 'My email.',
     'version': '0.1',
     'install_requires': ['nose'],
-    'packages': ['NAME'],
+    'packages': ['ex47'],
     'scripts': [],
     'name': 'projectname'
 }
