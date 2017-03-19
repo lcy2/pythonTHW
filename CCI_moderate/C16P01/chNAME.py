@@ -38,16 +38,10 @@ def changeName(path, oldName, newName, indent):
             if oldName in fn:
                 print indt(indent) + "changing the name of " + fn
                 os.rename(os.path.join(path, fn), os.path.join(path, fn.replace(oldName, newName)))
-
-
-if __name__ == '__main__':
-    ans = None      
-    print "This script changes names of all the relevant files for a new project."
-    print "Have you preserved your original template?"
-    while ans != "yes" and ans != "no":
-        ans = raw_input("(yes/no): ")
-    if ans == "yes":
-        newName = raw_input("The new name is: ")
-        changeName('./', 'NAME',newName,0)
-    else:
-        print "Phew. Close call."
+            
+ans = raw_input("This script changes names of all the relevant files for a new project. \nHave you preserved your original template? (yes/no): ")
+if ans == "yes":
+    newName = raw_input("The new name is: ")
+    changeName('./', 'NAME',newName,0)
+else:
+    print "Phew. Close call."
